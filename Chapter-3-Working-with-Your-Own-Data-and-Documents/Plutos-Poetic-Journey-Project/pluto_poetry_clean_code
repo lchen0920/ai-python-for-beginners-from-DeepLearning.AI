@@ -1,0 +1,116 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Programming Assignment: Pluto's Poetic Journey 🚀 冥王星诗意之旅编程作业
+
+import test_your_code
+from helper_functions import get_llm_response, print_formatted_list, print_formatted_list_of_dict, download_file
+
+# <a name='1'></a>
+# ## Exercise 1: Encountering Data - Reading the News Article 🛰️ 练习1：遇到数据 - 阅读新闻文章
+
+# Define function to read article from file 定义从文件读取文章的函数
+def read_article(text_file):
+    f = open(text_file, "r")
+    contents = f.read()
+    f.close()
+    return contents
+
+# Test Exercise 1
+test_your_code.exercise_1(read_article)
+
+# <a name='2'></a>
+# ## Exercise 2: Decoding the Cosmos - Extracting Key Topics 🔭 练习2：解码宇宙 - 提取关键主题
+
+# Read and display news article 读取并显示新闻文章
+news_article = read_article("news_article.txt")
+print(news_article)
+
+# Use LLM to extract key topics 使用LLM提取关键主题
+prompt = f"""
+Read the contents of file {news_article}, and extract the key topics discussed in it. Provide exactly 3 key topics.
+Each topic should not be more than 8 words.
+
+Provide each topic in a new line.
+
+Output Format:
+topic_1
+
+topic_2
+
+topic_3
+
+"""
+response = get_llm_response(prompt)
+print(response)
+
+# Create list of key topics 创建关键主题列表
+key_topics = [
+    "Pluto's geological activity and features",
+    "New Horizons' discoveries and insights",
+    "Future Kuiper Belt Object exploration plans"
+]
+
+print_formatted_list(key_topics)
+
+# Test Exercise 2
+test_your_code.exercise_2(key_topics)
+
+# <a name='3'></a>
+# ## Exercise 3: The Poet's Palette - Organizing Your Topics 🎨 练习3：诗人的调色板 - 组织主题
+
+# Create list of dictionaries with usage flags 创建带有使用标志的字典列表
+topics_to_use = [
+    {
+        "Topic 1": "Pluto's geological activity and features",
+        "to_use": False
+    },
+    {
+        "Topic 2": "New Horizons' discoveries and insights",
+        "to_use": True
+    },
+    {
+        "Topic 3": "Future Kuiper Belt Object exploration plans",
+        "to_use": True
+    }
+]
+
+print_formatted_list_of_dict(topics_to_use)
+
+# Test Exercise 3
+test_your_code.exercise_3(topics_to_use, key_topics)
+
+# <a name='4'></a>
+# ## Exercise 4: Cosmic Sonnets - Writing Your Space Poem 🖋️ 练习4：宇宙十四行诗 - 撰写太空诗
+
+# Create prompt for poem generation 创建用于生成诗歌的提示
+prompt = f"""
+write a poem, the poem should be of exactly 4 lines from {topics_to_use} 
+"""
+
+print(prompt)
+
+# Test Exercise 4
+test_your_code.exercise_4(prompt, topics_to_use)
+
+# Generate and display poem 生成并显示诗歌
+poem = get_llm_response(prompt)
+print(poem)
+
+# <a name='5'></a>
+# ## Exercise 5: Preserving the Verse - Saving Your Poem 💾 练习5：保存诗句 - 保存诗歌
+
+# Define function to save poem to file 定义将诗歌保存到文件的函数
+def save_to_file(contents_to_save):
+    f = open("poem.txt", 'w')
+    f.write(contents_to_save)
+    f.close()
+
+# Test Exercise 5
+test_your_code.exercise_5(save_to_file)
+
+# Save poem to file 将诗歌保存到文件
+save_to_file(poem)
+
+# Optional file download 可选文件下载
+download_file()
