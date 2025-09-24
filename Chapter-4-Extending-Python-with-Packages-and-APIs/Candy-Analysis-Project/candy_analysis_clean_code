@@ -1,0 +1,113 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Programming Assignment: 🍭 Candy Analysis 📊 糖果分析编程作业
+
+import test_your_code
+
+# <a name='1'></a>
+# ## Exercise 1: Unwrapping the Data 🎁 练习1：打开数据
+
+# Import helper functions from external file 从外部文件导入辅助函数
+from ex1_helper_functions import *
+
+# Test import statement 测试导入语句
+test_your_code.check_ex1_import_statement()
+
+# Read candy data from CSV file 从CSV文件读取糖果数据
+candy_data = read_candy_data('candy_data.csv')
+
+# Display candy data in table format 以表格形式显示糖果数据
+display_table(candy_data)
+
+# Test Exercise 1
+test_your_code.exercise_1(candy_data)
+
+# <a name='2'></a>
+# ## Exercise 2: Popularity Contest! 🏆 练习2：人气竞赛！
+
+# Import functions for processing popularity scores 导入处理人气分数的函数
+from ex2_helper_functions import get_popularity_scores, print_scores
+
+# Test import statement 测试导入语句
+test_your_code.check_ex2_import_statement()
+
+# Extract popularity scores from candy data 从糖果数据中提取人气分数
+popularity_scores = get_popularity_scores(candy_data)
+
+# Display popularity scores 显示人气分数
+print_scores(popularity_scores)
+
+# Test Exercise 2
+test_your_code.exercise_2(popularity_scores)
+
+# <a name='3'></a>
+# ## Exercise 3: Finding the Average Sweet Spot 🎯 练习3：找到平均甜蜜点
+
+# Import statistics module for calculations 导入统计模块进行计算
+import statistics as stats
+
+# Test import statement 测试导入语句
+test_your_code.check_ex3_import_statement()
+
+# Calculate average popularity score 计算平均人气分数
+avg_popularity = stats.mean(popularity_scores)
+
+# Display average popularity with 2 decimal places 显示保留2位小数的平均人气分数
+print(f"Average Popularity Score: {avg_popularity:.2f}")
+
+# Test Exercise 3
+test_your_code.exercise_3(avg_popularity)
+
+# <a name='4'></a>
+# ## Exercise 4: The Top Candy Leaderboard 🥇 练习4：顶级糖果排行榜
+
+# Import module for top candy analysis 导入顶级糖果分析模块
+import ex4_helper_functions
+
+# Test import statement 测试导入语句
+test_your_code.check_ex4_import_statement()
+
+# Get candies with above-average popularity 获取人气高于平均水平的糖果
+top_candies = ex4_helper_functions.get_top_candies(candy_data, avg_popularity)
+
+# Display top candies in formatted table 以格式化表格显示顶级糖果
+ex4_helper_functions.display_pretty_table(top_candies)
+
+# Test Exercise 4
+test_your_code.exercise_4(top_candies)
+
+# <a name='5'></a>
+# ## Exercise 5: Crafting the Perfect Description ✍️ 练习5：制作完美描述
+
+# Import client for LLM functionality 导入LLM功能客户端
+from ex5_helper_functions import client
+
+# Define function to get LLM responses 定义获取LLM响应的函数
+def get_llm_response(prompt):
+    completion = client.chat.completions.create( 
+        model='gpt-4o-mini', 
+        messages=[ 
+            {
+                "role": "system",
+                "content": "You are an rude AI assistant.", # 设置为粗鲁的AI助手
+            },
+            {"role": "user", "content": prompt},
+        ],
+        temperature=0.7, # 设置温度参数为0.7
+    )
+    response = completion.choices[0].message.content 
+    return response
+
+# Test custom LLM function 测试自定义LLM函数
+test_your_code.check_change_in_ex5()
+
+# Generate descriptions for top candies 为顶级糖果生成描述
+for candy in top_candies:
+    prompt = f"""
+    For the given candy name, {candy['Candy Name']}, write a short, catchy two-sentence description.
+    """
+    response = get_llm_response(prompt)
+    print(f"NAME: {candy['Candy Name']}")
+    print(f"DESCRIPTION: {response}")
+    print()
