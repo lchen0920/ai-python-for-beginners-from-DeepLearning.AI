@@ -12,18 +12,18 @@ Original Code: The initial implementation as submitted for course assignments
 Clean Code: Refactored versions with improved structure, readability, and comprehensive bilingual documentation (Chinese/English)
 
 Chapter Structure:
-├── Chapter_1/
-│   ├── assignment_original.py
-│   └── assignment_clean.py
+├── Chapter-1-Basics-of-AI-Python-Coding
+│   ├── virtual_library_original.py
+│   └── virtual_library_clean_code.py
 ├── Chapter_2/
-│   ├── assignment_original.py
-│   └── assignment_clean.py
+│   ├── book_tracker_original.py
+│   └── book_tracker_clean_code.py
 ├── Chapter_3/
-│   ├── assignment_original.py
-│   └── assignment_clean.py
+│   ├── pluto_poetry_original.py
+│   └── pluto_poetry_clean_code.py
 └── Chapter_4/
-    ├── assignment_original.py
-    └── assignment_clean.py
+    ├── candy_analysis_original.py
+    └── candy_analysis_clean_code.py
 🎯 Learning Objectives
 Through this course, I gained proficiency in:
 
