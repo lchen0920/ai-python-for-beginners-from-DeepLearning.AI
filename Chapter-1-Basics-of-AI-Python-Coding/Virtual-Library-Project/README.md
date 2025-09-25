@@ -83,3 +83,5 @@ User Experience: Clear output and messaging
 
 Course Context
 This assignment was part of Chapter 1: "Basics of AI Python Coding" in the AI Python for Beginners course, focusing on establishing core programming concepts essential for AI development.
+
+Part of the AI Python for Beginners course completion portfolio - demonstrating foundational Python programming skills.
