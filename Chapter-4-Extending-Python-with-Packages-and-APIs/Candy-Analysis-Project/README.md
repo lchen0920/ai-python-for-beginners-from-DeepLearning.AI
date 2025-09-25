@@ -16,13 +16,13 @@ This is the final major assignment from the **AI Python for Beginners** course b
 + Advanced Python programming techniques
 
 ## 📁 Files Included
-### `1. candy_analysis_original.py`
+### 1. `candy_analysis_original.py`
 
 + Original submission as completed for the Coursera assignment
 
 + Basic implementation meeting course requirements
 
-### `2. candy_analysis_clean_code.py`
+### 2. `candy_analysis_clean_code.py`
 + Refactored and optimized code
 
 + Enhanced readability and structure
