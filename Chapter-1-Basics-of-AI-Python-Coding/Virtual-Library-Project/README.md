@@ -1,9 +1,9 @@
 # Chapter 1: Virtual Library Project - AI Python for Beginners
 
-## Project Overview
+## 📚 Project Overview
 This is the first major assignment from the **AI Python for Beginners** course by DeepLearning.AI on Coursera. The project focuses on creating a virtual library system to practice fundamental Python programming concepts.
 
-## Learning Objectives
+## 🎯 Learning Objectives
 - Python variable declaration and assignment
 - String manipulation and f-strings
 - Basic arithmetic operations
@@ -11,7 +11,7 @@ This is the first major assignment from the **AI Python for Beginners** course b
 - Multi-line string formatting
 - Problem-solving with conditional logic
 
-## Files Included
+## 📁 Files Included
 
 ### 1. `virtual_library_original.py`
 - Original submission as completed for the Coursera assignment
@@ -23,7 +23,7 @@ This is the first major assignment from the **AI Python for Beginners** course b
 - Comprehensive bilingual comments (Chinese/English)
 - Improved error handling and user experience
 
-## Code Features
+## 💻 Code Features
 
 ### Exercise 1: Book Information
 - Stores book details in variables (title, author, year, copies)
@@ -40,30 +40,36 @@ This is the first major assignment from the **AI Python for Beginners** course b
 - Uses conditional logic for availability checks
 - Provides helpful user instructions
 
-## How to Run
+## 🚀 How to Run
 
 ### Option 1: Run the original version
+```bash 
+
 python virtual_library_original.py
+```
 
 ### Option 2: Run the clean version (recommended)
+```bash
+
 python virtual_library_clean_code.py
+```
 
 
-## Project Requirements Met
-- [x] Variable declaration and assignment
-- [x] String formatting with f-strings
-- [x] Arithmetic operations
-- [x] Multi-line print statements
-- [x] User interaction simulation
-- [x] Code organization and comments
+## 📋 Project Requirements Met
+- ✅ Variable declaration and assignment
+- ✅ String formatting with f-strings
+- ✅ Arithmetic operations
+- ✅ Multi-line print statements
+- ✅ User interaction simulation
+- ✅ Code organization and comments
 
-## Skills Demonstrated
+## 🌟 Skills Demonstrated
 - **Python Fundamentals**: Variables, data types, operations
 - **Code Quality**: Readable, well-commented code
 - **Problem Solving**: Logical approach to library management
 - **User Experience**: Clear output and messaging
 
-## Course Context
+## 📖 Course Context
 This assignment was part of Chapter 1: "Basics of AI Python Coding" in the AI Python for Beginners course, focusing on establishing core programming concepts essential for AI development.
 
 ---
