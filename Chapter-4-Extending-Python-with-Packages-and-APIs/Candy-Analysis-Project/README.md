@@ -92,15 +92,15 @@ python candy_analysis_clean_code.py
 + Formatted output display
 
 ## 🌟 Skills Demonstrated
-**+ 📊 Data Analysis**: CSV processing, statistical calculations
++ **📊 Data Analysis**: CSV processing, statistical calculations
 
-**+ 🤖 AI Integration**: LLM API usage, prompt engineering
++ **🤖 AI Integration**: LLM API usage, prompt engineering
 
-**+ 📁 Code Organization**: Modular imports, function usage
++ **📁 Code Organization**: Modular imports, function usage
 
-**+ 💡 Problem Solving**: Data filtering, ranking algorithms
++ **💡 Problem Solving**: Data filtering, ranking algorithms
 
-**+ 👤 User Experience**: Clean output formatting
++ **👤 User Experience**: Clean output formatting
 
 ## 📖 Course Context
 This assignment was part of Chapter 4: "Extending Python with Packages and APIs" in the AI Python for Beginners course, focusing on advanced Python concepts including external modules, APIs, and AI integration.
