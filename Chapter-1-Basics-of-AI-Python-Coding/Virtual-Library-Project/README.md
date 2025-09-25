@@ -1,87 +1,71 @@
-Chapter 1: Virtual Library Project - AI Python for Beginners
-Project Overview
-This is the first major assignment from the AI Python for Beginners course by DeepLearning.AI on Coursera. The project focuses on creating a virtual library system to practice fundamental Python programming concepts.
+# Chapter 1: Virtual Library Project - AI Python for Beginners
 
-Learning Objectives
-Python variable declaration and assignment
+## Project Overview
+This is the first major assignment from the **AI Python for Beginners** course by DeepLearning.AI on Coursera. The project focuses on creating a virtual library system to practice fundamental Python programming concepts.
 
-String manipulation and f-strings
+## Learning Objectives
+- Python variable declaration and assignment
+- String manipulation and f-strings
+- Basic arithmetic operations
+- Print statements and output formatting
+- Multi-line string formatting
+- Problem-solving with conditional logic
 
-Basic arithmetic operations
+## Files Included
 
-Print statements and output formatting
+### 1. `virtual_library_original.py`
+- Original submission as completed for the Coursera assignment
+- Basic implementation meeting course requirements
 
-Multi-line string formatting
+### 2. `virtual_library_clean_code.py`
+- Refactored and optimized code
+- Enhanced readability and structure
+- Comprehensive bilingual comments (Chinese/English)
+- Improved error handling and user experience
 
-Problem-solving with conditional logic
+## Code Features
 
-Files Included
-1. virtual_library_original.py
-Original submission as completed for the Coursera assignment
+### Exercise 1: Book Information
+- Stores book details in variables (title, author, year, copies)
+- Demonstrates proper variable naming conventions
+- Uses appropriate data types (strings and integers)
 
-Basic implementation meeting course requirements
+### Exercise 2: Book Checkout System
+- Implements book checkout functionality
+- Updates available copies count
+- Provides user feedback with formatted messages
 
-2. virtual_library_clean.py
-Refactored and optimized code
+### Exercise 3: Book Request Handling
+- Manages unavailable book requests
+- Uses conditional logic for availability checks
+- Provides helpful user instructions
 
-Enhanced readability and structure
+## How to Run
 
-Comprehensive bilingual comments (Chinese/English)
-
-Improved error handling and user experience
-
-Code Features
-Exercise 1: Book Information
-Stores book details in variables (title, author, year, copies)
-
-Demonstrates proper variable naming conventions
-
-Uses appropriate data types (strings and integers)
-
-Exercise 2: Book Checkout System
-Implements book checkout functionality
-
-Updates available copies count
-
-Provides user feedback with formatted messages
-
-Exercise 3: Book Request Handling
-Manages unavailable book requests
-
-Uses conditional logic for availability checks
-
-Provides helpful user instructions
-
-How to Run
-Option 1: Run the original version
-text
+### Option 1: Run the original version
 python virtual_library_original.py
-Option 2: Run the clean version (recommended)
-text
-python virtual_library_clean.py
-Project Requirements Met
-Variable declaration and assignment
 
-String formatting with f-strings
+### Option 2: Run the clean version (recommended)
+python virtual_library_clean_code.py
 
-Arithmetic operations
 
-Multi-line print statements
+## Project Requirements Met
+- [x] Variable declaration and assignment
+- [x] String formatting with f-strings
+- [x] Arithmetic operations
+- [x] Multi-line print statements
+- [x] User interaction simulation
+- [x] Code organization and comments
 
-User interaction simulation
+## Skills Demonstrated
+- **Python Fundamentals**: Variables, data types, operations
+- **Code Quality**: Readable, well-commented code
+- **Problem Solving**: Logical approach to library management
+- **User Experience**: Clear output and messaging
 
-Code organization and comments
-
-Skills Demonstrated
-Python Fundamentals: Variables, data types, operations
-
-Code Quality: Readable, well-commented code
-
-Problem Solving: Logical approach to library management
-
-User Experience: Clear output and messaging
-
-Course Context
+## Course Context
 This assignment was part of Chapter 1: "Basics of AI Python Coding" in the AI Python for Beginners course, focusing on establishing core programming concepts essential for AI development.
 
-Part of the AI Python for Beginners course completion portfolio - demonstrating foundational Python programming skills.
+---
+
+*Part of the AI Python for Beginners course completion portfolio - demonstrating foundational Python programming skills.*
