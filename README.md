@@ -62,14 +62,14 @@ Original: The initial submission with minimal changes
 
 Clean: Refactored code with improved structure, comments, and documentation in both Chinese and English
 
-##🚀 How to Use This Repository
+## 🚀 How to Use This Repository
 Navigate to the specific chapter you're interested in
 
 Review both code versions to see the progression from initial to refined implementation
 
 The clean code versions include detailed bilingual comments explaining the logic and improvements
 
-##📞 Contact
+## 📞 Contact
 Feel free to explore the code and provide feedback. This repository serves as a demonstration of my learning journey through the AI Python for Beginners course.
 ## 
 This repository is for educational purposes and demonstrates my progression in learning Python programming for AI applications.
