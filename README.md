@@ -7,9 +7,9 @@ This course provided a comprehensive introduction to Python programming with a f
 ## 📁 Repository Structure
 The repository is organized into 4 main chapters, each containing:
 
-### Original Code: The initial implementation as submitted for course assignments
+**Original Code**: The initial implementation as submitted for course assignments
 
-### Clean Code: Refactored versions with improved structure, readability, and comprehensive bilingual documentation (Chinese/English)
+**Clean Code**: Refactored versions with improved structure, readability, and comprehensive bilingual documentation (Chinese/English)
 
 ## Chapter Structure:
 ```text
