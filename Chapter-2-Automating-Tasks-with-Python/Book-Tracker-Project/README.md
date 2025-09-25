@@ -1,6 +1,6 @@
 # Chapter 2: Book Tracker Project - AI Python for Beginners
 ## 📚 Project Overview
-This is the second major assignment from the *AI Python for Beginners* course by DeepLearning.AI on Coursera. The project focuses on creating a book tracking system to practice Python dictionary operations, conditional logic, loops, and AI integration for automated email generation.
+This is the second major assignment from the **AI Python for Beginners** course by DeepLearning.AI on Coursera. The project focuses on creating a book tracking system to practice Python dictionary operations, conditional logic, loops, and AI integration for automated email generation.
 
 ## 🎯 Learning Objectives
 + Python dictionary creation and manipulation
